@@ -7,38 +7,39 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSSGrid</a>
+          <a href="flexbox.html" target="_blank">Flexbox</a>
+          <a href="css-grid.html">CSSGrid</a>
         </nav>
         <button>❤Like</button>
       </header>
+      
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
-
-          <img
-            src="img/laura-jones.jpg"
-            alt="this is laura jones img"
-            width="50"
-            height="50"
-          />
-
-          <p id="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-          </p>
-
-          <img
-            src="img/post-img.jpg"
-            alt="this is image"
-            width="500"
-            class="post"
-          />
+          <div class="img-box">
+            <img
+              src="img/laura-jones.jpg"
+              alt="this is laura jones img"
+              width="50"
+              height="50"
+              class="author-img"
+            />
+            <p id="author">
+              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            </p>
+          <div>         
         </header>
+        <img
+        src="img/post-img.jpg"
+        alt="this is image"
+        width="500"
+        class="post"
+      />
         <p>
           All modern websites and web applications are built using three
           <em>fundamental </em>technologies : HTML, CSS and JavaScript. These
@@ -97,38 +98,45 @@
       <aside>
         <h4>Related posts</h4>
         <ul class="related">
-          <li>
+          <li class="related-li">
             <img
               src="img/related-1.jpg"
               alt="programming img1"
               height="75"
               width="75"
             />
-            <a href="#">How to learn html</a>
+            <div>
+            <a href="#" class="links">How to learn html</a>
             <p class="related-author">By Jonas Schmedtmann</p>
+          </div>
           </li>
-          <li>
+          <li class="related-li">
             <img
               src="img/related-2.jpg"
               alt="programming img2"
               height="75"
               width="75"
             />
-            <a href="#">The Unknown Powers of CSS</a>
+            <div>
+            <a href="#" class="links">The Unknown Powers of CSS</a>
             <p class="related-author">By Jim Dillon</p>
+          </div>
           </li>
-          <li>
+          <li class="related-li">
             <img
               src="img/related-3.jpg"
               alt="programming img3"
               height="75"
               width="75"
             />
-            <a href="#">Why JavaScript is Awesome</a>
+            <div>
+            <a href="#" class="links">Why JavaScript is Awesome</a>
             <p class="related-author">By Matilda</p>
+          </div>
           </li>
         </ul>
       </aside>
+    
       <footer id="copyright" class="text data">
         <p>Copyright &copy 2027 by The Code Magazine.</p>
       </footer>
